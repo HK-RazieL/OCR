@@ -23,7 +23,7 @@ app.get("/", (req,res) => {
     res.sendFile(path.join(__dirname + "/index.html"));
 })
 
-app.post('/',function(req,res){
+app.post('/OCR/',function(req,res){
     upload(req,res,function(err) {  
         if(err) {  
             return res.end("Error uploading file.");  
